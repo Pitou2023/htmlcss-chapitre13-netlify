@@ -17,12 +17,12 @@
 		/ 350px auto;
 	@include xs {
 		grid:
-			'header' 1fr
-			'main' 1fr
-			'picture' 1fr
-			'aside' 1fr
-			'footer' 1fr
-			/ 1fr;
+			'header' auto
+			'main' auto
+			'picture' auto
+			'aside' auto
+			'footer' auto
+			/ auto;
 	}
 }
 
@@ -38,7 +38,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	@include xs {
-		padding: 5rem 2rem;
+		padding: 4rem 2rem;
 	}
 	h1 {
 		font-size: 6rem;
@@ -46,11 +46,17 @@ header {
 		font-weight: 300;
 		letter-spacing: 3rem;
 		@include xs {
-			font-size: 4rem;
+			font-size: 3rem;
+			letter-spacing: 2rem;
+			line-height: 6rem;
+			font-weight: 700;
 		}
 	}
 	p {
 		letter-spacing: 0.5rem;
+		@include xs {
+			letter-spacing: normal;
+		}
 	}
 	span {
 		display: inline-block;
@@ -120,7 +126,7 @@ aside {
 			display: flex;
 			justify-content: start;
 			align-items: center;
-			padding: 1rem 2rem;
+			padding: 1rem rem;
 			border-radius: 5px;
 			transition: all 0.2s;
 			cursor: pointer;
