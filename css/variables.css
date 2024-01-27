@@ -1,13 +1,14 @@
 /** @format */
 :root {
   --fontfamily: "Mulish", sans-serif;
-  --light: #00c3ff;
-  --primary: #2071e7;
-  --dark: #2980b9;
+  --light: #74deff;
+  --primary: #393b3e;
+  --dark: #107bb0;
   --text: #333;
   --background: #fafafa;
   --hint: #999;
   --border: #ddd;
+  --ln: #0a66c2;
 }
 
 /*# sourceMappingURL=variables.css.map */
