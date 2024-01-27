@@ -17,12 +17,12 @@
 		/ 350px auto;
 	@include xs {
 		grid:
-			'header' auto
-			'main' auto
-			'picture' auto
-			'aside' auto
-			'footer' auto
-			/ auto;
+			'header' 1fr
+			'main' 1fr
+			'picture' 1fr
+			'aside' 1fr
+			'footer' 1fr
+			/ 1fr;
 	}
 }
 
