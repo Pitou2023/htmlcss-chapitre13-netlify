@@ -108,7 +108,7 @@ header {
   position: sticky;
   top: 0;
   box-shadow: 0px 1px 10px black;
-  padding: 1rem 3rem;
+  padding: 0 5vw;
   z-index: 1;
 }
 @media (max-width: 480px) {
@@ -162,9 +162,11 @@ header .menu a {
 }
 
 .vp {
+  text-align: center;
+  background: var(--border);
   display: flex;
   flex-direction: row-reverse;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 70px);
 }
 @media (max-width: 480px) {
   .vp {
@@ -174,9 +176,8 @@ header .menu a {
 }
 .vp aside {
   overflow: hidden;
-  background: var(--border);
-  max-width: 15vw;
-  padding: 5rem 1.5rem;
+  max-width: 20vw;
+  margin: 2vw;
 }
 @media (max-width: 480px) {
   .vp aside {
@@ -185,8 +186,8 @@ header .menu a {
   }
 }
 .vp aside h3 {
+  margin-top: 2vw;
   font-size: 3.5rem;
-  padding: 0 1.5rem;
 }
 .vp aside h3 span:first-child {
   color: #bb2a03;
@@ -206,23 +207,19 @@ header .menu a {
     margin: 0;
   }
 }
-.vp aside h4 {
-  padding: 0 1.5rem 1rem 1.5rem;
-}
 @media (max-width: 480px) {
   .vp aside h4 {
     padding: 0 1.5rem;
   }
 }
 .vp aside p {
-  padding: 0 1.5rem;
   letter-spacing: 0.1rem;
 }
 .vp aside .separation-vp {
   background: var(--primary);
   height: 2px;
   width: 50%;
-  margin: 2rem 1.5rem;
+  margin: 6vw auto;
 }
 @media (max-width: 480px) {
   .vp aside .separation-vp {
@@ -234,22 +231,20 @@ header .menu a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 85vw;
-  background: url(/img/accueil_1.WEBP) center center/cover;
-  filter: grayscale(50%);
-  opacity: 0.9;
+  width: 80vw;
+  background: url(/img/accueil_1\ 11.jpg) center center/cover;
   color: white;
 }
 @media (max-width: 480px) {
   .vp main {
     width: 100vw;
     box-shadow: 0px 1px 10px black;
-    filter: grayscale(80%);
   }
 }
 .vp main h1 {
-  font-size: 10rem;
-  text-shadow: 10px 15px 15px black;
+  text-align: center;
+  font-size: 7rem;
+  text-shadow: 5px 5px 15px black;
   letter-spacing: 0.4rem;
 }
 @media (max-width: 480px) {
@@ -264,7 +259,7 @@ header .menu a {
   letter-spacing: 2px;
   font-size: 3rem;
   margin: 8rem 0rem 4rem 0;
-  text-shadow: 10px 15px 15px black;
+  text-shadow: 5px 5px 5px black;
   font-weight: 700;
   text-align: center;
   line-height: 5rem;
@@ -274,18 +269,22 @@ header .menu a {
     margin: 3rem 0rem 3rem 0rem;
     font-size: 1.5rem;
     text-align: center;
-    text-shadow: 1px 1px 4px black;
+    text-shadow: 5px 5px 5px black;
     line-height: 2rem;
     padding: 1rem;
   }
 }
 .vp main .city {
   border: 2px solid white;
+  background-color: white;
+  opacity: 0.8;
   padding: 2rem;
   font-weight: 700;
-  text-shadow: 10px 15px 15px black;
   font-size: 3rem;
   border-radius: 30px;
+}
+.vp main .city span {
+  color: var(--primary);
 }
 @media (max-width: 480px) {
   .vp main .city {
