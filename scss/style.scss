@@ -80,7 +80,6 @@ aside {
 	background: var(--background);
 	border-right: 1px solid var(--border);
 	padding: 5rem;
-	min-height: 1500px;
 	.block {
 		margin-bottom: 5rem;
 		h3 {
@@ -176,32 +175,19 @@ main {
 	.separation {
 		padding: 4rem 0;
 	}
-
-	.experience {
-		display: flex;
-		margin: 5rem 0;
-		.timeline {
-			text-align: center;
-			color: var(--hint);
-			padding-right: 2rem;
-			border-right: 1px solid var(--border);
-			p {
-				margin: 0;
-			}
-		}
-	}
-	.content {
-		padding: 0 10px;
-		h3 {
-			margin: 0;
-		}
-		p {
-			margin: 0;
-		}
-		ul {
-			list-style: circle;
-			padding-left: 4rem;
-			margin: 2rem 0;
+	.pf-content {
+		display: inline-block;
+		margin-top: 3rem;
+		overflow: hidden;
+		text-align: center;
+		border-radius: 30px;
+		color: white;
+		padding: 1.5rem;
+		background: linear-gradient(to right, var(--primary), var(--light));
+		&:hover {
+			background: var(--dark);
+			transform: scale(1.5);
+			transition: all 0.2s;
 		}
 	}
 }
@@ -214,7 +200,7 @@ footer {
 	align-items: center;
 	text-align: center;
 	color: white;
-	padding: 5rem;
+	padding: 1rem 0 5rem 0;
 	background: var(--text);
 	@include xs {
 		padding: 5rem 1.5rem;
@@ -258,6 +244,7 @@ form {
 		min-width: 400px;
 		padding: 1rem 2rem;
 		line-height: 2rem;
+		border-radius: 0;
 		&::placeholder {
 			color: var(--text);
 		}

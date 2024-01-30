@@ -23,10 +23,7 @@ p {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   margin: 1rem 0 2rem 0;
 }
 
@@ -168,7 +165,6 @@ aside {
   background: var(--background);
   border-right: 1px solid var(--border);
   padding: 5rem;
-  min-height: 1500px;
 }
 aside .block {
   margin-bottom: 5rem;
@@ -267,32 +263,20 @@ main .intro {
 main .separation {
   padding: 4rem 0;
 }
-main .experience {
-  display: flex;
-  margin: 5rem 0;
-}
-main .experience .timeline {
+main .pf-content {
+  display: inline-block;
+  margin-top: 3rem;
+  overflow: hidden;
   text-align: center;
-  color: var(--hint);
-  padding-right: 2rem;
-  border-right: 1px solid var(--border);
+  border-radius: 30px;
+  color: white;
+  padding: 1.5rem;
+  background: linear-gradient(to right, var(--primary), var(--light));
 }
-main .experience .timeline p {
-  margin: 0;
-}
-main .content {
-  padding: 0 10px;
-}
-main .content h3 {
-  margin: 0;
-}
-main .content p {
-  margin: 0;
-}
-main .content ul {
-  list-style: circle;
-  padding-left: 4rem;
-  margin: 2rem 0;
+main .pf-content:hover {
+  background: var(--dark);
+  transform: scale(1.5);
+  transition: all 0.2s;
 }
 
 footer {
@@ -303,7 +287,7 @@ footer {
   align-items: center;
   text-align: center;
   color: white;
-  padding: 5rem;
+  padding: 1rem 0 5rem 0;
   background: var(--text);
 }
 @media (max-width: 480px) {
@@ -350,6 +334,7 @@ form input {
   min-width: 400px;
   padding: 1rem 2rem;
   line-height: 2rem;
+  border-radius: 0;
 }
 form input::placeholder {
   color: var(--text);
