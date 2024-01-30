@@ -7,6 +7,10 @@
 @use 'animation' as *;
 @use 'media-queries' as *;
 
+p {
+	margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -231,6 +235,56 @@ header {
 			padding: 1rem;
 			background-color: black;
 			color: white;
+		}
+	}
+}
+.contact {
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+
+	.clock {
+		background: var(--border);
+		box-shadow: var(--shadow-title);
+		padding: 3rem;
+		margin: 0 1rem 1rem;
+		border-radius: 10px;
+		display: grid;
+		grid:
+			'h2 ' 1fr
+			'clock' 4fr/ 42vw;
+		h2 {
+			text-align: center;
+			grid-area: h2;
+			font-size: 4rem;
+			i {
+				margin: 0 1rem 4rem 0;
+			}
+		}
+		.clock-content {
+			grid-area: clock;
+		}
+	}
+	.service {
+		background: var(--border);
+		box-shadow: var(--shadow-title);
+		padding: 3rem;
+		margin: 0 1rem 1rem;
+		border-radius: 10px;
+		display: grid;
+		grid:
+			'h2 ' 1fr
+			'service' 4fr/ 42vw;
+		h2 {
+			text-align: center;
+			font-size: 4rem;
+			grid-area: h2;
+			i {
+				margin: 0 1rem 4rem 0;
+			}
+		}
+		.service-content {
+			grid-area: service;
 		}
 	}
 }

@@ -94,6 +94,10 @@ img {
 /* Landscape phone to portrait tablet */
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
+p {
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -347,6 +351,52 @@ header .menu a {
     background-color: black;
     color: white;
   }
+}
+
+.contact {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.contact .clock {
+  background: var(--border);
+  box-shadow: var(--shadow-title);
+  padding: 3rem;
+  margin: 0 1rem 1rem;
+  border-radius: 10px;
+  display: grid;
+  grid: "h2 " 1fr "clock" 4fr/42vw;
+}
+.contact .clock h2 {
+  text-align: center;
+  grid-area: h2;
+  font-size: 4rem;
+}
+.contact .clock h2 i {
+  margin: 0 1rem 4rem 0;
+}
+.contact .clock .clock-content {
+  grid-area: clock;
+}
+.contact .service {
+  background: var(--border);
+  box-shadow: var(--shadow-title);
+  padding: 3rem;
+  margin: 0 1rem 1rem;
+  border-radius: 10px;
+  display: grid;
+  grid: "h2 " 1fr "service" 4fr/42vw;
+}
+.contact .service h2 {
+  text-align: center;
+  font-size: 4rem;
+  grid-area: h2;
+}
+.contact .service h2 i {
+  margin: 0 1rem 4rem 0;
+}
+.contact .service .service-content {
+  grid-area: service;
 }
 
 /*# sourceMappingURL=pizza.css.map */
