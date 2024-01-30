@@ -138,6 +138,7 @@ header {
 		color: white;
 		@include xs {
 			width: 100vw;
+			height: calc(100vh - 145px);
 			box-shadow: var(--shadow-title);
 		}
 		h1 {
@@ -146,9 +147,8 @@ header {
 			text-shadow: var(--shadow-title);
 			letter-spacing: 0.4rem;
 			@include xs {
-				font-size: 4rem;
+				font-size: 6rem;
 				text-align: center;
-				margin-top: 2rem;
 			}
 		}
 		p {
@@ -160,27 +160,29 @@ header {
 			text-align: center;
 			line-height: 5rem;
 			@include xs {
-				margin: 3rem 0rem 3rem 0rem;
-				font-size: 1.5rem;
+				margin: 8vh 0rem 8vh 0rem;
+				font-size: 2rem;
 				text-align: center;
-				line-height: 2rem;
+				line-height: 4rem;
 				padding: 1rem;
 			}
 		}
 		.city {
 			border: 2px solid white;
 			background-color: white;
-			opacity: 0.8;
+			opacity: 0.7;
 			padding: 1rem 2rem;
-			font-weight: 700;
+			font-weight: 900;
 			font-size: 2rem;
 			border-radius: 30px;
 			span {
 				color: var(--primary);
 			}
 			@include xs {
-				font-size: 2rem;
-				padding: 1rem;
+				font-size: 1.6rem;
+				padding: 1rem 5rem;
+				border-radius: 5px;
+				border: 0;
 				margin-bottom: 2rem;
 				text-align: center;
 			}
