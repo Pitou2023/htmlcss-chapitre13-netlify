@@ -56,12 +56,17 @@ img {
   color: var(--hint);
 }
 
+/** @format */
 .mb-5 {
   margin-bottom: 5rem !important;
 }
 
 .mb-2 {
   margin-bottom: 2rem !important;
+}
+
+.mb-10 {
+  margin-bottom: 10rem !important;
 }
 
 @keyframes bounce {
@@ -114,6 +119,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 1px 3px 10px var(--border);
 }
 @media (max-width: 480px) {
   header {
@@ -243,12 +249,23 @@ main {
     padding: 5rem 2rem;
   }
 }
+main h1 {
+  margin-bottom: 4rem;
+}
 main h2 {
   margin-bottom: 4rem;
 }
 main p {
   letter-spacing: 0.1rem;
   line-height: 3rem;
+}
+main .intro {
+  background: var(--background);
+  padding: 3rem;
+  box-shadow: 1px 3px 10px var(--border);
+}
+main .separation {
+  padding: 4rem 0;
 }
 main .experience {
   display: flex;

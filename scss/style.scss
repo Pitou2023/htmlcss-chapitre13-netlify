@@ -37,6 +37,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 1px 3px 10px var(--border);
 	@include xs {
 		padding: 4rem 2rem;
 	}
@@ -157,6 +158,9 @@ main {
 	@include xs {
 		padding: 5rem 2rem;
 	}
+	h1 {
+		margin-bottom: 4rem;
+	}
 	h2 {
 		margin-bottom: 4rem;
 	}
@@ -164,6 +168,15 @@ main {
 		letter-spacing: 0.1rem;
 		line-height: 3rem;
 	}
+	.intro {
+		background: var(--background);
+		padding: 3rem;
+		box-shadow: 1px 3px 10px var(--border);
+	}
+	.separation {
+		padding: 4rem 0;
+	}
+
 	.experience {
 		display: flex;
 		margin: 5rem 0;
