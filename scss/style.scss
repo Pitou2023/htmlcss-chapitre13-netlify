@@ -101,16 +101,33 @@ aside {
 				top: 0;
 				left: 0;
 				width: 80%;
-				background: var(--light);
+				background: var(--ln);
+				&-3 {
+					position: absolute;
+					height: 5px;
+					top: 0;
+					left: 0;
+					width: 50%;
+					background: var(--ln);
+				}
 			}
 			.bar-skill-dot {
 				position: absolute;
 				height: 10px;
 				width: 10px;
-				background: var(--dark);
+				background: var(--ln);
 				left: calc(80% - 5px);
 				top: -2.5px;
 				transform: rotate(45deg);
+				&-3 {
+					position: absolute;
+					height: 10px;
+					width: 10px;
+					background: var(--ln);
+					left: calc(50% - 5px);
+					top: -2.5px;
+					transform: rotate(45deg);
+				}
 			}
 		}
 		.stars-container {
@@ -183,10 +200,11 @@ main {
 		border-radius: 30px;
 		color: white;
 		padding: 1.5rem;
-		background: linear-gradient(to right, var(--primary), var(--light));
+		background: #001c35;
+		box-shadow: 1px 3px 10px var(--border);
 		&:hover {
 			background: var(--dark);
-			transform: scale(1.5);
+			transform: scale(1.2);
 			transition: all 0.2s;
 		}
 	}
