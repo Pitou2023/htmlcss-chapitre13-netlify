@@ -121,6 +121,8 @@ header {
   header {
     flex-direction: column;
     align-items: center;
+    position: sticky;
+    top: -7rem;
   }
 }
 header .logo {
@@ -422,7 +424,7 @@ header .menu a {
 }
 @media (max-width: 480px) {
   .contact .service-content {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
