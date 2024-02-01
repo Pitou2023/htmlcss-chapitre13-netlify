@@ -76,7 +76,7 @@ header {
 
 .vp {
 	text-align: center;
-	background: var(--border);
+	background: white;
 	display: flex;
 	flex-direction: row-reverse;
 	height: calc(100vh - 70px);
@@ -96,6 +96,7 @@ header {
 		}
 		h3 {
 			margin-top: 2vw;
+			letter-spacing: 0.5rem;
 			font-size: 3.5rem;
 			span:first-child {
 				color: #bb2a03;
@@ -113,12 +114,14 @@ header {
 			}
 		}
 		h4 {
+			line-height: 6rem;
 			@include xs {
 				padding: 0 1.5rem;
 			}
 		}
 		p {
 			letter-spacing: 0.1rem;
+			line-height: 3rem;
 		}
 		.separation-vp {
 			background: var(--primary);
@@ -148,7 +151,7 @@ header {
 		h1 {
 			text-align: center;
 			font-size: 7rem;
-			text-shadow: var(--shadow-title);
+			text-shadow: 1px 1px 5px black;
 			letter-spacing: 0.4rem;
 			@include xs {
 				font-size: 6rem;
@@ -159,7 +162,7 @@ header {
 			letter-spacing: 2px;
 			font-size: 3rem;
 			margin: 8rem 0rem 4rem 0;
-			text-shadow: var(--shadow-title);
+			text-shadow: 1px 1px 5px black;
 			font-weight: 700;
 			text-align: center;
 			line-height: 5rem;
@@ -197,7 +200,7 @@ header {
 	background: url(/img/austin-ban-IS6RwpuEJpY-unsplash.jpg) center bottom /
 		cover;
 	height: 30vh;
-	margin: 1rem auto;
+	margin: 0.1rem auto 1rem auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -209,7 +212,7 @@ header {
 	}
 	h1 {
 		font-size: 10rem;
-		text-shadow: var(--shadow-title);
+		text-shadow: 1px 1px 5px black;
 
 		@include xs {
 			font-size: 3rem;
@@ -238,146 +241,86 @@ header {
 		}
 	}
 }
+
 .contact {
-	margin: 0;
 	display: flex;
 	justify-content: space-around;
+	line-height: 3rem;
 	@include xs {
 		flex-direction: column;
-		justify-content: center;
 	}
-
-	.clock {
-		background: var(--border);
-		box-shadow: var(--shadow-title);
-		padding: 3rem;
-		margin: 0 1rem 1rem;
-		border-radius: 10px;
-		display: grid;
-		grid:
-			'h2 ' 1fr
-			'clock' 4fr/ 42vw;
+	iframe {
+		position: relative;
+		width: 100%;
+		height: 200px;
+	}
+	h2 {
+		font-size: 4rem;
+		text-align: center;
+		padding: 2rem;
+		background: #222;
+		color: white;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.273);
 		@include xs {
-			grid:
-				'h2 ' 1fr
-				'clock' 10fr /
-				1fr;
-			margin: 1rem;
-			padding: 0.5rem;
+			font-size: 2rem;
 		}
+	}
+	> div {
+		width: 32vw;
+		margin-bottom: 1rem;
 
-		h2 {
-			text-shadow: var(--shadow-title);
-			text-align: center;
-			grid-area: h2;
-			font-size: 4rem;
-			i {
-				margin: 0 1rem 4rem 0;
-				@include xs {
-					margin: 0;
-				}
-			}
-			@include xs {
-				font-size: 2.5rem;
-				margin: 0;
-			}
-		}
-		.clock-content {
-			grid-area: clock;
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: 1fr 1fr;
-			place-self: center top;
-			@include xs {
-				grid-template-columns: 1fr 1fr;
-				place-items: center;
-			}
-			.day {
-				margin: 2vw;
-				text-align: center;
-				font-size: 2rem;
-				background-color: white;
-				line-height: 3rem;
-				padding: 3rem;
-				border-radius: 10px;
-				box-shadow: var(--shadow-title);
-				p:first-child {
-					font-weight: 700;
-					margin-bottom: 5rem;
-					@include xs {
-						margin-bottom: 2rem;
-					}
-				}
-				@include xs {
-					width: 40vw;
-				}
-			}
-		}
-	}
-	.service {
-		background: var(--border);
-		box-shadow: var(--shadow-title);
-		padding: 3rem;
-		margin: 0 1rem 1rem;
-		border-radius: 10px;
-		display: grid;
-		grid:
-			'h2 ' 1fr
-			'service' 4fr/ 42vw;
 		@include xs {
-			grid:
-				'h2 ' 1fr
-				'service' 10fr /
-				1fr;
-			padding: 1rem;
+			width: 100%;
+			margin: 0;
 		}
-		h2 {
-			text-shadow: var(--shadow-title);
-			text-align: center;
-			font-size: 4rem;
-			grid-area: h2;
-			i {
-				margin: 0 1rem 4rem 0;
-			}
-			@include xs {
-				font-size: 2.5rem;
-			}
-		}
-		.service-content {
-			grid-area: service;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 1fr;
-			place-self: center top;
-			.service-item {
-				margin: 2vw 1vw;
-				padding: 3rem;
-				background-color: white;
-				border-radius: 10px;
-				box-shadow: var(--shadow-title);
-				@include xs {
-					margin: 1rem;
-					padding: 2rem 3rem;
-				}
-				h3 {
-					font-size: 2rem;
-					line-height: 5rem;
-					text-align: center;
-					margin-bottom: 5rem;
-					i {
-						margin-right: 1rem;
-						font-size: 3rem;
-					}
-					@include xs {
-						line-height: 2rem;
-						text-align: center;
-						i {
-							margin: 0 2.5rem 1rem 2.5rem;
-						}
-						margin-bottom: 1rem;
-					}
-				}
-			}
+		.jour {
+			font-weight: 700;
 		}
 	}
+	> div > div {
+		padding: 2rem;
+		border: 2px solid var(--primary);
+		height: 250px;
+		@include xs {
+			height: 100%;
+			border: 1px solid rgba(0, 0, 0, 0.248);
+		}
+	}
+	.day {
+		display: flex;
+		justify-content: space-around;
+	}
+	.service-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		text-align: center;
+		@include xs {
+			font-size: 1.5rem;
+		}
+	}
+}
+.carte {
+	margin: 10rem;
+
+	h1 {
+		color: white;
+		background: black;
+		text-align: center;
+		padding: 2rem;
+		margin-bottom: 1rem;
+		box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.684);
+	}
+	@include xs {
+		margin: 2rem;
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	font-size: 1rem;
+	background: var(--primary);
+	color: white;
 }
