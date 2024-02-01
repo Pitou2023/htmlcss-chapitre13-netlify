@@ -324,6 +324,7 @@ header .menu a {
 @media (max-width: 480px) {
   .avis {
     height: 35vh;
+    margin: 0;
   }
 }
 .avis h1 {
@@ -370,7 +371,12 @@ header .menu a {
     flex-direction: column;
   }
 }
-.contact iframe {
+.contact .google p {
+  font-weight: 700;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.contact .google iframe {
   position: relative;
   width: 100%;
   height: 200px;
@@ -389,7 +395,7 @@ header .menu a {
   }
 }
 .contact > div {
-  width: 32vw;
+  width: 24vw;
   margin-bottom: 1rem;
 }
 @media (max-width: 480px) {
@@ -404,7 +410,7 @@ header .menu a {
 .contact > div > div {
   padding: 2rem;
   border: 2px solid var(--primary);
-  height: 250px;
+  height: 350px;
 }
 @media (max-width: 480px) {
   .contact > div > div {
@@ -424,7 +430,31 @@ header .menu a {
 }
 @media (max-width: 480px) {
   .contact .service-content {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+}
+.contact .appel {
+  border: 2px solid var(--primary);
+}
+@media (max-width: 480px) {
+  .contact .appel {
+    border-bottom: 7rem solid #222;
+  }
+}
+.contact .appel p {
+  margin: 130px auto;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  width: fit-content;
+  background: linear-gradient(rgb(53, 157, 255), rgb(160, 208, 255));
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.323);
+  border-radius: 30px;
+}
+@media (max-width: 480px) {
+  .contact .appel p {
+    margin: 4rem auto;
   }
 }
 

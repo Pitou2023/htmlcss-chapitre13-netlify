@@ -211,6 +211,7 @@ header {
 	text-align: center;
 	@include xs {
 		height: 35vh;
+		margin: 0;
 	}
 	h1 {
 		font-size: 10rem;
@@ -251,10 +252,17 @@ header {
 	@include xs {
 		flex-direction: column;
 	}
-	iframe {
-		position: relative;
-		width: 100%;
-		height: 200px;
+	.google {
+		p {
+			font-weight: 700;
+			text-align: justify;
+			margin-bottom: 1rem;
+		}
+		iframe {
+			position: relative;
+			width: 100%;
+			height: 200px;
+		}
 	}
 	h2 {
 		font-size: 4rem;
@@ -268,7 +276,7 @@ header {
 		}
 	}
 	> div {
-		width: 32vw;
+		width: 24vw;
 		margin-bottom: 1rem;
 
 		@include xs {
@@ -282,7 +290,7 @@ header {
 	> div > div {
 		padding: 2rem;
 		border: 2px solid var(--primary);
-		height: 250px;
+		height: 350px;
 		@include xs {
 			height: 100%;
 			border: 1px solid rgba(0, 0, 0, 0.248);
@@ -298,7 +306,28 @@ header {
 		justify-content: space-around;
 		text-align: center;
 		@include xs {
-			font-size: 1rem;
+			font-size: 1.5rem;
+			text-align: justify;
+		}
+	}
+	.appel {
+		border: 2px solid var(--primary);
+		@include xs {
+			border-bottom: 7rem solid #222;
+		}
+		p {
+			margin: 130px auto;
+
+			text-align: center;
+			padding: 1rem 2rem;
+			font-weight: 700;
+			width: fit-content;
+			background: linear-gradient(rgb(53, 157, 255), rgb(160, 208, 255));
+			box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.323);
+			border-radius: 30px;
+			@include xs {
+				margin: 4rem auto;
+			}
 		}
 	}
 }
