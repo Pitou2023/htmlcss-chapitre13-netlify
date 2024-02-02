@@ -312,7 +312,7 @@ header .menu a {
 
 .avis {
   background: url(/img/austin-ban-IS6RwpuEJpY-unsplash.jpg) center bottom/cover;
-  height: 30vh;
+  height: 60vh;
   margin: 0.1rem auto 1rem auto;
   display: flex;
   flex-direction: column;
@@ -363,7 +363,7 @@ header .menu a {
 
 .contact {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   line-height: 3rem;
 }
 @media (max-width: 480px) {
@@ -385,7 +385,7 @@ header .menu a {
   font-size: 4rem;
   text-align: center;
   padding: 2rem;
-  background: #222;
+  background: var(--primary);
   color: white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.273);
 }
@@ -395,8 +395,9 @@ header .menu a {
   }
 }
 .contact > div {
-  width: 24vw;
+  width: 24.7vw;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 @media (max-width: 480px) {
   .contact > div {
@@ -439,7 +440,7 @@ header .menu a {
 }
 @media (max-width: 480px) {
   .contact .appel {
-    border-bottom: 7rem solid #222;
+    border-bottom: 5rem solid black;
   }
 }
 .contact .appel p {
@@ -478,8 +479,7 @@ header .menu a {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  font-size: 1rem;
+  padding: 2rem 1rem;
   background: var(--primary);
   color: white;
 }
